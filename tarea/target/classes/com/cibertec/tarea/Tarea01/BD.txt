@@ -1,0 +1,11 @@
+
+Drop DATABASE  IF  EXISTS bd_imagen;
+CREATE DATABASE  IF NOT EXISTS bd_imagen;
+use bd_imagen;
+create table tb_imagen(
+	idImagen int primary key  auto_increment,
+    nombre varchar(255),
+    tamano int ,
+    archivo longblob
+)
+
